@@ -1,0 +1,99 @@
+.funds-container {
+        color: black;
+        width: 100%;
+        min-height: calc(100vh - 3.5rem);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 3.5em;
+        padding-bottom: 4rem;
+}
+
+.initial-data {
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+}
+
+.fund-title {
+        margin-bottom: .5rem;
+        font-size: x-large;
+        font-weight: 600;
+}
+
+.fund-subtitle {
+        margin-top: 1rem;
+        margin-bottom: .7rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+}
+
+.initial-data div {
+        display: flex;
+        justify-content: space-between;
+}
+
+.excel-icon {
+        margin-right: .5rem;
+}
+
+.compare-grid {
+        justify-self: center;
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 80vw;
+        justify-content: center;
+        align-content: center;
+}
+
+.compare-grid h5:nth-of-type(1), h5:nth-of-type(2), h5:nth-of-type(3), h5:nth-of-type(4), h5:nth-of-type(5) {
+        font-weight: 600;
+}
+
+.compare-grid h5:nth-of-type(10n+1), h5:nth-of-type(10n+2), h5:nth-of-type(10n+3), h5:nth-of-type(10n+4), h5:nth-of-type(10n+5) {
+        background-color: rgb(235, 235, 235);
+}
+
+.compare-data {
+        padding: .5rem;
+        border-top: .5px solid #969696;
+        font-size: 1rem;
+        font-weight: normal;
+}
+
+.compare-data:nth-last-child(1), .compare-data:nth-last-child(2), .compare-data:nth-last-child(3), .compare-data:nth-last-child(4), .compare-data:nth-last-child(5) {
+        border-bottom: .5px solid #969696;
+}
+
+.arrow {
+        color: #1c1c1c;
+        margin-left: .5rem;
+        font-size: medium;
+}
+
+.rotated {
+        transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 450px) { 
+        .compare-data {
+                font-size: .9rem;
+        }
+}
+
+@media only screen and (max-width: 400px) { 
+        .compare-data {
+                font-size: .8rem;
+        }
+}
+
+@media only screen and (max-width: 375px) { 
+        .compare-data {
+                font-size: .7rem;
+        }
+}

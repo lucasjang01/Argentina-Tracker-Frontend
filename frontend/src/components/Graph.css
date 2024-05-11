@@ -1,0 +1,183 @@
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: calc(100vh - 3.5rem);
+        position: relative;
+        color: black;
+}
+
+.graph-container {
+        position: relative;
+        top: calc(3.8em + 74px);
+        margin-top: 1rem;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+}
+
+.graph-tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+}
+
+.graph-sidebar {
+        position: relative;
+        top: calc(3em + 37px);
+        width: 10%;
+        min-width: 11rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 4rem;
+        margin-left: 1rem;
+}
+
+.graph-metrics-menu > div:nth-child(1) {
+        margin-bottom: 1.5rem;
+}
+
+.graph-metrics-menu > div:nth-child(1) > h4 {
+        background-color: #ffa0a0;
+}
+
+.graph-metrics-menu > div:nth-child(2) {
+        margin-bottom: .5rem;
+}
+
+.graph-metrics-menu > div:nth-child(2) > h4 {
+        background-color: #a1e1ff;
+}
+
+.graph-dates-menu {
+        min-width: 11rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.compare-btn {
+        margin-top: 1rem;
+        width: 100%;
+}
+
+.empty-date::before {
+        content: "Elige dos fechas.";
+        color: red;
+        font-size: 16px;
+        position: absolute;
+        display: inline-block;
+        bottom: 110%;
+        right: 15%;
+        width: 100%;
+}
+
+.equal-dates::before {
+        content: "Las fechas deben ser distintas.";
+        color: red;
+        font-size: 16px;
+        position: absolute;
+        display: inline-block;
+        bottom: 110%;
+        left: -12%;
+        width: 160%;
+}
+
+@media only screen and (max-width: 1300px) {
+        .container {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: calc(3.8em + 74px);
+        }
+
+        .graph-container {
+                width: 90%;
+        }
+
+        .graph-sidebar {
+                top: calc(3.8em + 74px);
+                width: 80%;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-top: 2rem;
+                /* background-color: aliceblue; */
+        }
+
+        .graph-metrics-menu {
+                width: 70%;
+                min-width: 24rem;
+                display: flex;
+                align-items: center;
+                margin-right: 4rem;
+        }
+
+        .graph-metrics-menu > div:nth-child(1) {
+                margin-right: 4rem;
+                margin-bottom: 0;
+        }
+        
+        .graph-metrics-menu > div:nth-child(2) {
+                margin-bottom: 0;
+        }
+}
+
+@media only screen and (max-width: 1000px) {
+        .graph-container {
+                width: 95%;
+        }
+
+        .graph-tools {
+                width: 100%;
+        }
+}
+
+@media only screen and (max-width: 750px) {
+        .graph-sidebar {
+                width: 95%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+
+        .graph-metrics-menu {
+                width: 60%;
+                min-width: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+                margin-right: 0;
+        }
+
+        .graph-metrics-menu > div:nth-child(1) {
+                margin-right: 0;
+                margin-bottom: 3rem;
+        }
+
+        .graph-metrics-menu > div:nth-child(2) {
+                margin-right: 0;
+                margin-bottom: 2rem;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+        .graph-tools {
+                align-self: center;
+                width: 90%;
+                padding: 0;
+        }
+
+        .graph-sidebar {
+                width: 90%;
+        }
+}

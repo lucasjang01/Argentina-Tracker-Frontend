@@ -1,0 +1,39 @@
+.metric {
+    width: 100%;
+    min-width: 11rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+}
+
+.metric h4 {
+    padding: .5rem;
+}
+
+.metric h4::after {
+    content: "(última semana)";
+    font-size: .8rem;
+}
+
+.metric-atributes {
+    font-weight: 600;
+}
+
+.metric-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border-top: .5px solid #969696;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.metric-row {
+    cursor: pointer;
+}
+
+.metric-atributes {
+    cursor: default;
+}

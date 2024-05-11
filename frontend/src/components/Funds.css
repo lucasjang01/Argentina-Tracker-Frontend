@@ -1,0 +1,29 @@
+.funds-grid {
+        justify-self: center;
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80vw;
+        justify-content: center;
+        align-content: center;
+}
+
+.funds-grid h4:nth-of-type(1), h4:nth-of-type(2) {
+        font-weight: 600;
+}
+
+.funds-grid h4:nth-of-type(4n+1), h4:nth-of-type(4n+2) {
+        background-color: rgb(235, 235, 235);;
+}
+
+.fund {
+        padding: .5rem;
+        font-size: medium;
+        border-top: .5px solid #969696;
+        font-size: 1rem;
+        font-weight: normal;
+}
+
+.fund:nth-last-child(1),  .fund:nth-last-child(2){
+        border-bottom: .5px solid #969696;
+}

@@ -1,0 +1,87 @@
+.tickers {
+        background-color: #005aa3;
+        width: 12rem;
+        min-width: 12rem;
+        height: 94vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        justify-self: flex-start;
+        align-self: flex-start;
+        overflow-y: auto;
+        position: fixed;
+        top: 3.5em;
+        left: -15rem;
+        transition: all 0.2s ease-in-out;
+        z-index: 5;
+}
+
+.tickers::-webkit-scrollbar {
+        width: .6vw;
+}
+
+.tickers::-webkit-scrollbar-thumb {
+        background-color: #007de4;
+        border-radius: 10px;
+}
+
+.tickers-menu-active {
+        transform: translateX(15rem);
+}
+
+.search {
+        width: 93%;
+        height: 2.8rem;
+        min-height: 2.8rem;
+        background-color: #ebebeb;
+        padding: 10px;
+        font-size: large;
+        border: 0;
+        margin-top: .7rem;
+        margin-bottom: .7rem;
+        color: #1c1c1c;
+        border-radius: 10px;
+}
+
+.search:focus {
+        outline: #ebebeb solid 1px;
+}
+
+.search::placeholder {
+        color: #363636;
+}
+
+.ticker {
+        width: 90%;
+        height: 2.8rem;
+        min-height: 2.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        border-radius: 10px;
+}
+
+.ticker:hover {
+        background-color: #0066b9;
+        cursor: pointer;
+        transition: 100ms;
+}
+
+.ticker:active {
+        background-color: #0078da;
+}
+
+.selected {
+        filter: brightness(110%);
+        background-color: #0066b9;
+}
+
+.selected:hover {
+        background-color: #0073d1;
+}
+
+.selected:active {
+        background-color: #0078da;
+}
